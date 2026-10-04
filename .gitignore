@@ -31,3 +31,24 @@ node_modules/
 Thumbs.db
 *.swp
 *.swo
+
+# Visual Studio 缓存和生成文件
+.vs/
+Debug/
+Release/
+*.vcxproj.user
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.tlog
+
+# Keil C51 生成文件和个人界面配置
+Objects/
+Listings/
+*.uvgui.*
+*.uvguix.*
+*.hex
+*.lst
+*.m51
+*.lnp
