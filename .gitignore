@@ -1,0 +1,33 @@
+# 本地凭据与配置
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Java / C / C++ / Rust 编译产物
+*.class
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+target/
+build/
+
+# JavaScript
+node_modules/
+
+# 编辑器与系统临时文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
