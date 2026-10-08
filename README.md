@@ -44,6 +44,8 @@ git push
 | 2026-09-14 | 算法 | 数组操作 | [练习代码](algorithms/arrays/2026-09-14/) |
 | 2026-09-20 | 算法 | 顺序表 | [练习代码](algorithms/sequential-lists/2026-09-20/) |
 | 2026-09-22 | 算法 | 单链表 | [练习代码](algorithms/linked-lists/2026-09-22/) |
-| 2026-10-08 | 算法 | 顺序表基本操作与按位置插入 | [练习代码](algorithms/sequential-lists/2026-10-08/) |
+| 2026-10-08 | 算法 | 线性表综合练习：顺序表与单链表 | [练习工程](algorithms/linear-lists/2026-10-08/) |
+| 2026-10-08 | 算法 | 顺序表复习、考试背诵版及习题笔记 | [代码与讲义](algorithms/sequential-lists/2026-10-08-review/) |
+| 2026-10-08 | 算法 | 单链表复习与考试背诵版 | [代码与讲义](algorithms/linked-lists/2026-10-08-review/) |
 
 每次学习后新增一行，链接到对应练习目录。

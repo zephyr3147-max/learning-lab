@@ -123,12 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SQList.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="SQList.c" />
-    <ClCompile Include="test.c" />
+    <ClCompile Include="main_SList.c" />
+    <ClCompile Include="main_Sqlist.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
