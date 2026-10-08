@@ -44,5 +44,6 @@ git push
 | 2026-09-14 | 算法 | 数组操作 | [练习代码](algorithms/arrays/2026-09-14/) |
 | 2026-09-20 | 算法 | 顺序表 | [练习代码](algorithms/sequential-lists/2026-09-20/) |
 | 2026-09-22 | 算法 | 单链表 | [练习代码](algorithms/linked-lists/2026-09-22/) |
+| 2026-10-08 | 算法 | 顺序表基本操作与按位置插入 | [练习代码](algorithms/sequential-lists/2026-10-08/) |
 
 每次学习后新增一行，链接到对应练习目录。
