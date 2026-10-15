@@ -13,6 +13,7 @@
 | [algorithms](algorithms/) | 算法题、数据结构与解题复盘 |
 | [demos](demos/) | 小项目、功能验证和实验 demo |
 | [templates](templates/) | 通用学习记录模板 |
+| [notes](notes/) | 学习心得、概念辨析与复盘 |
 
 ## 如何记录
 
@@ -45,7 +46,14 @@ git push
 | 2026-09-20 | 算法 | 顺序表 | [练习代码](algorithms/sequential-lists/2026-09-20/) |
 | 2026-09-22 | 算法 | 单链表 | [练习代码](algorithms/linked-lists/2026-09-22/) |
 | 2026-10-08 | 算法 | 线性表综合练习：顺序表与单链表 | [练习工程](algorithms/linear-lists/2026-10-08/) |
-| 2026-10-08 | 算法 | 顺序表复习、考试背诵版及习题笔记 | [代码与讲义](algorithms/sequential-lists/2026-10-08-review/) |
-| 2026-10-08 | 算法 | 单链表复习与考试背诵版 | [代码与讲义](algorithms/linked-lists/2026-10-08-review/) |
+| 2026-10-08（持续更新） | 算法 | 顺序表复习、考试背诵版及习题笔记 | [完整目录](algorithms/sequential-lists/顺序表复习/) |
+| 2026-10-08（持续更新） | 算法 | 单链表复习与考试背诵版 | [完整目录](algorithms/linked-lists/单链表复习/) |
+| 2026-10-10 | 算法 | 单链表插入、按值删除与栈上头结点 | [练习工程](algorithms/linked-lists/2026-10-10/) |
+| 2026-10-13 | 算法 | 带头结点循环双链表 | [练习工程](algorithms/doubly-linked-lists/2026-10-13/) |
+| 2026-10-15 | 算法 | 栈与循环队列练习草稿 | [练习工程](algorithms/stacks-and-queues/2026-10-15/) |
+| 2026-10-15（归档） | 算法 | 双链表复习与考试背诵版 | [完整目录](algorithms/doubly-linked-lists/双链表复习/) |
+| 2026-10-15（归档） | 算法 | 栈复习、考试背诵版与作业 | [完整目录](algorithms/stacks/栈复习/) |
+| 2026-10-15（归档） | 算法 | 队列复习、考试背诵版与作业 | [完整目录](algorithms/queues/队列复习/) |
+| 2026-10-15（归档） | 心得 | 头结点设计与 InitList | [心得目录](notes/心得/) |
 
 每次学习后新增一行，链接到对应练习目录。

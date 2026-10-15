@@ -13,7 +13,7 @@ typedef Node *LinkList;
  * L：头指针变量的地址，调用前该变量必须为 NULL。
  * 成功返回 1；参数非法、重复初始化或分配失败返回 0。
  */
-int InitList(LinkList *L)
+int InitList(LinkList* L)
 {
     if (L == NULL || *L != NULL)
     {
