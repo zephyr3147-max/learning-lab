@@ -58,6 +58,12 @@ Listings/
 algorithms/**/考试背诵版/build/*
 !algorithms/**/考试背诵版/build/*.c
 !algorithms/**/考试背诵版/build/*.ps1
+!algorithms/**/考试背诵版/build/*.bat
+
+# 栈复习中的边界测试是手写 C 源码，不是构建产物
+!algorithms/stacks/栈复习/build/
+algorithms/stacks/栈复习/build/*
+!algorithms/stacks/栈复习/build/*.c
 
 # 含真实姓名的作业截图：按用户要求仅留在本地
 /algorithms/stacks/栈复习/作业提交/第3章栈和队列/提交结果_第3章客观题与程序评分.png

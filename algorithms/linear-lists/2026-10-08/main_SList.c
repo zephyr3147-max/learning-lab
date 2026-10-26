@@ -113,3 +113,39 @@ int ListDelete(LinkList L, int i, ElemType* e)
 	return 1;
 }
 
+void PrintList(const Node* L)
+{
+	if (L == NULL)
+	{
+		return;
+	}
+	for (const Node* p = L->next; p != NULL; p = p->next)
+	{
+		if (p != L->next)
+		{
+			printf(" ");
+		}
+		printf("%d", p->next);
+	}
+	printf("\n");
+}
+
+void DestroyList(LinkList* L)
+{
+	if (L == NULL)
+	{
+		return;
+	}
+	Node* p= *L;
+	while (p != NULL)
+	{
+		Node* next = p->next;
+		free(p);
+		p = next;
+	}
+	*L = NULL;
+}
+
+
+
+
