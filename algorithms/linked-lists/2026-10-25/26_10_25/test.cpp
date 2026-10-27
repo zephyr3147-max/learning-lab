@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,10 +8,9 @@ typedef struct Node
 	struct Node* next;
 } Node;
 
-void Insert(Node* head,int pos,int value)
+void Insert(Node* head,int value,int pos)
 {
 	Node* p = head;
-	Node* s = NULL;
 	if(pos < 1)
 	{
 		return;
@@ -19,32 +18,17 @@ void Insert(Node* head,int pos,int value)
 	while(pos > 1 && p->next != NULL)
 	{
 		p = p->next;
-		--pos;
+		pos--;
 	}
 	if(pos > 1)
 	{
 		return;
 	}
+	Node* s = NULL;
 	s = (Node*)malloc(sizeof(Node));
-	s->data = value;
 	s->next = p->next;
 	p->next = s;
-}
-
-void DeleteValue(Node* head,int value)
-{
-	Node* p = head;
-	while(p->next != NULL)
-	{
-		if(p->next->data == value)
-		{
-			Node* q = p->next;
-			p->next = q->next;
-			free(q);
-			return;
-		}
-		p = p->next;
-	}
+	s->data = value;
 }
 
 int Locate(Node* head,int value)
@@ -55,24 +39,38 @@ int Locate(Node* head,int value)
 	{
 		if(p->data == value)
 		{
-			return i;
+			return i; 
 		}
 		p = p->next;
-		++i;
 	}
-	return 0;
+	return -1;
 }
 
-void PrintList(Node* head)
+void Delete(Node* head,int value)
+{
+	Node* p = head;
+	while(p->next != NULL)
+	{
+		p = p->next;
+		if(p->next->data == value)
+		{
+			Node* q = p->next;
+			p->next = q->next;
+			free(q);
+			q = NULL;
+			break;
+		}
+	}
+}
+
+void Print(Node* head)
 {
 	Node* p = head->next;
 	while(p != NULL)
 	{
 		printf("%d",p->data);
 		if(p->next != NULL)
-		{
 			printf(" ");
-		}
 		p = p->next;
 	}
 	printf("\n");
@@ -82,20 +80,35 @@ int main(void)
 {
 	Node head = {0,NULL};
 	Node* tail = &head;
-	int n = 0;
-	int pos = 0;
-	int value = 0;
-	int target = 0;
-
+	
+	int n;
+	int value;
+	int pos;
 	scanf("%d",&n);
-	for(int i = 0;i < n;++i)
+
+	for(int i = 0;i < n;i++)
 	{
-		Node* s = NULL;
 		scanf("%d",&value);
+		Node* s = NULL;
 		s = (Node*)malloc(sizeof(Node));
-		s->data = value;
-		s->next = NULL;
 		tail->next = s;
 		tail = s;
+		s->data = value;
+		tail->next = NULL;
 	}
+
+	scanf("%d %d",&pos,&value);
+	Insert(&head,value,pos);
+
+	int target;
+	scanf("%d",&target);
+	Delete(&head,target);
+
+	Print(&head);
+
+	system("pause");
+	return 0;
 }
+
+
+
