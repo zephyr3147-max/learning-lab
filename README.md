@@ -64,6 +64,6 @@ git push
 | 2026-10-26（归档） | 算法 | 树与二叉树复习、习题与考试版 | [完整目录](algorithms/binary-trees/二叉树复习/) |
 | 2026-10-26（归档） | 算法 | 数据结构课程作业 | [作业目录](algorithms/course-assignments/数据结构作业/) |
 | 持续更新 | 课程作业 | 第二章线性表练习 01–06 | [作业目录](algorithms/course-assignments/数据结构作业/第二章_顺序表/) |
-| 2026-11-02（归档） | STM32 | STM32F103C8 GPIOC/PC13 工程模板 | [工程目录](embedded/stm32/2-1%20stm32工程模板/) |
+| 2026-11-02（归档） | STM32 | STM32F103C8 PC13 GPIO 输出示例 | [核心代码](embedded/stm32/2-1%20stm32工程模板/) |
 
 每次学习后新增一行，链接到对应练习目录。
