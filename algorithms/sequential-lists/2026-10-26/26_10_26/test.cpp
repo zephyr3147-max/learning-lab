@@ -1,4 +1,4 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,7 +38,35 @@ int Insert(SqList* L,int pos,int value)
 	return 1;
 }
 
+void PrintList(const SqList* L)
+{
+	for(int i = 0;i < L->length;++i)
+	{
+		printf("%d",L->data[i]);
+		if(i + 1 < L->length)
+		{
+			printf(" ");
+		}
+	}
+	printf("\n");
+}
 
+int main(void)
+{
+	SqList L;
+	int pos;
+	int n;
+	int value;
+	scanf("%d",&n);
+	ReadList(&L,n);
+	scanf("%d %d",&pos,&value);
+	if(Insert(&L,pos,value) == 1)
+	{
+		PrintList(&L);
+	}
+	free(L.data);
+	return 0;
+}
 
 
 
